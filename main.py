@@ -12,3 +12,7 @@ st.title('Our first Streamlit app')
 st.subheader('Introducing Streamlit in Automate Everything with Python')
 st.write('''This is our first Web App''')
 st.write(df)
+st.line_chart(df)
+
+myslider = st.slider('Celsius')
+st.write(myslider, 'in Farenheit is', myslider * 9/5 + 32)
